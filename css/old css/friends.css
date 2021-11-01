@@ -1,0 +1,52 @@
+html {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: minmax(200px, 2000px);
+    justify-content: center;
+    background-color: #24252A;
+}
+
+li, a, button {
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+    color: #edf0f1;
+}
+
+header {
+    background-color: #24252A;
+    top:0;
+    left:0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.logo{
+    cursor: pointer;
+    margin-right: auto;
+}
+
+/* Flexbox */
+.friends ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    justify-content: space-evenly;
+}
+.friends li {
+    height: 40vh;
+    flex-grow: 1;
+    list-style-type: none;
+}
+.friends li:last-child {
+    flex-grow: 10;
+}
+.friends img {
+    max-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    vertical-align: bottom;
+}
+
